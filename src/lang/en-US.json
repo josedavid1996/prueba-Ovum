@@ -1,0 +1,101 @@
+{
+  "HeaderIdiomas": {
+    "value1": "Spanish",
+    "value2": "English",
+    "value3": "Portuguese"
+  },
+  "Inicio": {
+    "titulo": "Welcome to Ovum 2022 - From September 6 to 9",
+    "TextButton": "Beginning"
+  },
+
+  "ModalInicio": {
+    "campo1": "Email",
+    "campo2": "Password",
+    "textButton": "Get in",
+    "textPassword": "I forgot my password"
+  },
+  "RecuperarContraseña": {
+    "textHeader": "Did you forget your password?",
+    "parrafo1": "Don't worry, we'll send you instructions to reset your password",
+    "campo1": "Email",
+    "textButton": "Recover password",
+    "textFooter": "Return"
+  },
+  "Lobby": {
+    "textHeader1": "Welcome to Ovum 2022",
+    "textHeader2": "From September 6 to 9",
+    "ButtonHeader": "Sign off",
+    "toast": "Welcome"
+  },
+  "ModalCalendario": {
+    "titulo": "Calender",
+    "volver": "Return",
+    "tituloParrafo1": "When and where will the Ovum 2022 event take place?",
+    "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo2": "When and where will the Ovum 2022 event take place?",
+    "parrafo2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo3": "When and where will the Ovum 2022 event take place?",
+    "parrafo3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et."
+  },
+  "ModalMapa": {
+    "titulo": "Plan Ovum 2022 - Feipe Arguello Convention Center",
+    "volver": "Return",
+    "tituloParrafo1": "When and where will the Ovum 2022 event take place?",
+    "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo2": "When and where will the Ovum 2022 event take place?",
+    "parrafo2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo3": "When and where will the Ovum 2022 event take place?",
+    "parrafo3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et."
+  },
+  "ModalQuestion": {
+    "titulo": "Frequent questions",
+    "volver": "Return",
+    "tituloParrafo1": "When and where will the Ovum 2022 event take place?",
+    "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo2": "When and where will the Ovum 2022 event take place?",
+    "parrafo2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo3": "When and where will the Ovum 2022 event take place?",
+    "parrafo3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et."
+  },
+  "Template": {
+    "textHeader1": "Welcome to Ovum 2022",
+    "textHeader2": "From September 6 to 9",
+    "ButtonHeader": "Sign off"
+  },
+  "Exposicion": {
+    "botonIntro": "Skip intro",
+    "volver": "Return",
+    "modalTitulo": "Sponsorships",
+    "cardTitulo1": "Sponsorships",
+    "cardTitulo2": "Sponsor A",
+    "cardTitulo3": "Sponsor B",
+    "cardTitulo4": "Sponsor C",
+    "cardTitulo5": "Sponsor D",
+    "cardTitulo6": "Sponsor E"
+  },
+  "Conferencista": {
+    "titulo": "SPEAKERS",
+    "cardSubtitulo1": "International Consultant in Poultry Processing",
+    "cardParrafo1": "Strategies to Improve Quality, Yield and Productivity in the Processing Plant",
+    "fecha1": "Fri. 9 Sep. 9:00 am,-",
+    "sala1": "Hall 4",
+    "cardSubtitulo2": "Cobb-Vantress/World Animal Welfare",
+    "cardParrafo2": "Animal Welfare-History, Evolution and Practical Implementation for the Poultry Industry",
+    "fecha2": "TUE. 6 Sep. 1:00 pm,-",
+    "sala2": "Hall 2",
+    "cardSubtitulo3": "North Carolina State University",
+    "cardParrafo3": "Marek's Disease: Diagnosis, Control and Use of Recombinant Vaccines",
+    "fecha3": "Fri. 9 Sep. 9:00 am,-",
+    "sala3": "Hall 1",
+    "cardSubtitulo4": "Network coordinator FSRisk",
+    "cardParrafo4": "Microbiological Risk Assessment: The Importance of Quantification and Serotyping",
+    "fecha4": "Fri. 9 Sep. 9:00 am,-",
+    "sala4": "Hall 4"
+  },
+  "Programa": {
+    "botonIntro": "Skip intro",
+    "volver": "Return",
+    "modalTitulo": "Program"
+  }
+}

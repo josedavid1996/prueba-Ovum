@@ -1,0 +1,101 @@
+{
+  "HeaderIdiomas": {
+    "value1": "Español",
+    "value2": "Ingles",
+    "value3": "Portugues"
+  },
+  "Inicio": {
+    "titulo": "Bienvenidos a Ovum 2022 - Del 6 al 9 de septiembre",
+    "TextButton": "Inicio"
+  },
+
+  "ModalInicio": {
+    "campo1": "Correo",
+    "campo2": "Contraseña",
+    "textButton": "Entrar",
+    "textPassword": "¿Olvidaste tu contraseña?"
+  },
+  "RecuperarContraseña": {
+    "textHeader": "¿Olvidaste tu contraseña?",
+    "parrafo1": "No te preocupes, te enviaremos instrucciones para que restablezcas tu contraseña",
+    "campo1": "Correo",
+    "textButton": "Recuperar Contraseña",
+    "textFooter": "Volver"
+  },
+  "Lobby": {
+    "textHeader1": "Bienvenidos a Ovum 2022",
+    "textHeader2": "Del 6 al 9 de septiembre",
+    "ButtonHeader": "Cerrar Sesion",
+    "toast": "Bienvenidos"
+  },
+  "ModalCalendario": {
+    "titulo": "Candelario",
+    "volver": "Volver",
+    "tituloParrafo1": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo2": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo3": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et."
+  },
+  "ModalMapa": {
+    "titulo": "Plano Ovum 2022 - Centro de Convenciones Feipe Arguello",
+    "volver": "Volver",
+    "tituloParrafo1": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo2": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo3": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et."
+  },
+  "ModalQuestion": {
+    "titulo": "Preguntas Frecuentes",
+    "volver": "Volver",
+    "tituloParrafo1": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo2": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et.",
+    "tituloParrafo3": "¿Cuándo y dónde se realizarán el evento Ovum 2022?",
+    "parrafo3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti veniam atque nobis animi quos laudantium quo voluptates minus et."
+  },
+  "Template": {
+    "textHeader1": "Bienvenidos a Ovum 2022",
+    "textHeader2": "Del 6 al 9 de septiembre",
+    "ButtonHeader": "Cerrar Sesion"
+  },
+  "Exposicion": {
+    "botonIntro": "Saltar Intro",
+    "volver": "Volver",
+    "modalTitulo": "Patrocinios",
+    "cardTitulo1": "Patrocinadores",
+    "cardTitulo2": "Auspiciador A",
+    "cardTitulo3": "Auspiciador B",
+    "cardTitulo4": "Auspiciador C",
+    "cardTitulo5": "Auspiciador D",
+    "cardTitulo6": "Auspiciador E"
+  },
+  "Conferencista": {
+    "titulo": "CONFERENCISTAS",
+    "cardSubtitulo1": "Consultor Internacional en Procesamiento Avicola",
+    "cardParrafo1": "  Estrategias para Mejorar la Calidad, el Rendimiento y la Productividad en la Planta de Procesamiento",
+    "fecha1": "Vie. 9 Sep. 9:00 am,-",
+    "sala1": "Sala 4",
+    "cardSubtitulo2": "Cobb-Vantress/World Animal Welfare",
+    "cardParrafo2": "Bienestar Animal-Historia, Evolución e Implementación Práctica para la Industria Avícola",
+    "fecha2": "Mar. 6 Sep. 1:00 pm,-",
+    "sala2": "Sala 2",
+    "cardSubtitulo3": "Universidad Estatal de Carolina del Norte",
+    "cardParrafo3": " Enfermedad de Marek: Diagnostico, Control y Uso de Vacunas Recombinantes",
+    "fecha3": "Vie. 9 Sep. 9:00 am,-",
+    "sala3": "Sala 1",
+    "cardSubtitulo4": "Coordinador de la red FSRisk",
+    "cardParrafo4": "Evaluacion de Riesgos Microbiológicos: La Importancia de la Cuantificacion y la Serotipificacion",
+    "fecha4": "Vie. 9 Sep. 9:00 am,-",
+    "sala4": "Sala 4"
+  },
+  "Programa": {
+    "botonIntro": "Saltar Intro",
+    "volver": "Volver",
+    "modalTitulo": "Programa"
+  }
+}

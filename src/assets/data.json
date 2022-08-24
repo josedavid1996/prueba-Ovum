@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "image": "agritech"
+    },
+    {
+      "id": 2,
+      "image": "cargill"
+    },
+    {
+      "id": 3,
+      "image": "cobb"
+    },
+    {
+      "id": 4,
+      "image": "hubbard"
+    },
+    {
+      "id": 5,
+      "image": "salmet"
+    }
+  ]
+}
