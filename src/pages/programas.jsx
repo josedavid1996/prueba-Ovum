@@ -29,7 +29,7 @@ const Programas = (props) => {
           </Scene>
         )}
       </div>
-      <PagineTemplate>
+      <PagineTemplate idioma={props}>
         <div
           id="modal"
           className={`bg-opacity absolute top-0 right-0 bottom-0 left-0 z-10  ${
@@ -83,7 +83,12 @@ export async function getStaticProps({ locale }) {
 
   return {
     props: {
-      Programa: response.default.Programa
+      Programa: response.default.Programa,
+      ModalCalendario: response.default.ModalCalendario,
+      ModalMapa: response.default.ModalMapa,
+      ModalQuestion: response.default.ModalQuestion,
+      Template: response.default.Template,
+      HeaderIdiomas: response.default.HeaderIdiomas
     }
   }
 }

@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 
 const isServer = () => typeof window === 'undefined'
 
-const AuspiciadorB = () => {
+const AuspiciadorB = (props) => {
   const [appRendered, setAppRendered] = useState(false)
   useEffect(() => {
     if (!isServer()) {
@@ -29,7 +29,7 @@ const AuspiciadorB = () => {
           </Scene>
         )}
       </div>
-      <PagineTemplate>
+      <PagineTemplate idioma={props}>
         <div
           id="modal-patrocinador"
           className="bg-opacity absolute top-0 right-0 bottom-0 left-0 z-10 flex justify-center items-center"
@@ -52,3 +52,16 @@ const AuspiciadorB = () => {
 }
 
 export default AuspiciadorB
+export async function getStaticProps({ locale }) {
+  const response = await import(`../../../lang/${locale}.json`)
+
+  return {
+    props: {
+      ModalCalendario: response.ModalCalendario,
+      ModalMapa: response.ModalMapa,
+      ModalQuestion: response.ModalQuestion,
+      Template: response.default.Template,
+      HeaderIdiomas: response.default.HeaderIdiomas
+    }
+  }
+}

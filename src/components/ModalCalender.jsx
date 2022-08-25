@@ -1,24 +1,7 @@
-import { useRouter } from 'next/router'
 import React from 'react'
 import { IconBack, IconCalender } from '../icons'
-import enUS from '../lang/en-US.json'
-import enPe from '../lang/es-pe.json'
-import enBr from '../lang/pt-br.json'
 
-const ModalCalender = ({ calender, setCalender }) => {
-  const { locale } = useRouter()
-  let data
-  switch (locale) {
-    case 'pt-br':
-      data = enBr.ModalCalendario
-      break
-    case 'es-pe':
-      data = enPe.ModalCalendario
-      break
-    case 'en-US':
-      data = enUS.ModalCalendario
-      break
-  }
+const ModalCalender = ({ calender, setCalender, dataIdioma }) => {
   const {
     titulo,
     volver,
@@ -28,7 +11,7 @@ const ModalCalender = ({ calender, setCalender }) => {
     parrafo2,
     tituloParrafo3,
     parrafo3
-  } = data
+  } = dataIdioma
   return (
     <div
       id="modal-calender"

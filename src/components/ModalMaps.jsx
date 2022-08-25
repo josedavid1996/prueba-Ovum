@@ -1,25 +1,8 @@
-import { useRouter } from 'next/router'
 import React from 'react'
 import { IconBack, IconMaps } from '../icons'
 import Image from 'next/image'
-import enUS from '../lang/en-US.json'
-import enPe from '../lang/es-pe.json'
-import enBr from '../lang/pt-br.json'
 
-const ModalMaps = ({ maps, setMaps }) => {
-  const { locale } = useRouter()
-  let data
-  switch (locale) {
-    case 'pt-br':
-      data = enBr.ModalMapa
-      break
-    case 'es-pe':
-      data = enPe.ModalMapa
-      break
-    case 'en-US':
-      data = enUS.ModalMapa
-      break
-  }
+const ModalMaps = ({ maps, setMaps, dataIdioma }) => {
   const {
     titulo,
     volver
@@ -29,7 +12,7 @@ const ModalMaps = ({ maps, setMaps }) => {
     // parrafo2,
     // tituloParrafo3,
     // parrafo3
-  } = data
+  } = dataIdioma
   return (
     <div
       id="modal-maps"

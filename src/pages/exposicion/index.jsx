@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { PagineTemplate } from '../../components/PagineTemplate'
 import { IconBack, IconPatrocinador } from '../../icons'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const isServer = () => typeof window === 'undefined'
 
@@ -41,7 +42,7 @@ const Exposicion = (props) => {
           </Scene>
         )}
       </div>
-      <PagineTemplate>
+      <PagineTemplate idioma={props}>
         <div
           id="modal"
           className={`bg-opacity absolute top-0 right-0 bottom-0 left-0 z-10  ${
@@ -69,43 +70,41 @@ const Exposicion = (props) => {
             </div>
 
             <div className="w-full cards-exposicion gap-y-[34px] gap-x-[27px] mt-8 max-w-[1200px] mx-auto">
-              <div
-                onClick={() => router.push('exposicion/patrocinador')}
-                className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]"
-              >
-                <p className="text-[25px] leading-[30px]">{cardTitulo1}</p>
-              </div>
+              <Link href="exposicion/patrocinador">
+                <div className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]">
+                  <p className="text-[25px] leading-[30px]">{cardTitulo1}</p>
+                </div>
+              </Link>
 
-              <div
-                onClick={() => router.push('exposicion/auspiciador-a')}
-                className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]"
-              >
-                <p className="text-[25px] leading-[30px]">{cardTitulo2}</p>
-              </div>
-              <div
-                onClick={() => router.push('exposicion/auspiciador-b')}
-                className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]"
-              >
-                <p className="text-[25px] leading-[30px]">{cardTitulo3}</p>
-              </div>
-              <div
-                onClick={() => router.push('exposicion/auspiciador-c')}
-                className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]"
-              >
-                <p className="text-[25px] leading-[30px]">{cardTitulo4}</p>
-              </div>
-              <div
-                onClick={() => router.push('exposicion/auspiciador-d')}
-                className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]"
-              >
-                <p className="text-[25px] leading-[30px]">{cardTitulo5}</p>
-              </div>
-              <div
-                onClick={() => router.push('exposicion/auspiciador-e')}
-                className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]"
-              >
-                <p className="text-[25px] leading-[30px]">{cardTitulo6}</p>
-              </div>
+              <Link href="exposicion/auspiciador-a">
+                <div className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]">
+                  <p className="text-[25px] leading-[30px]">{cardTitulo2}</p>
+                </div>
+              </Link>
+
+              <Link href="exposicion/auspiciador-b">
+                <div className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]">
+                  <p className="text-[25px] leading-[30px]">{cardTitulo3}</p>
+                </div>
+              </Link>
+
+              <Link href="exposicion/auspiciador-c">
+                <div className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]">
+                  <p className="text-[25px] leading-[30px]">{cardTitulo4}</p>
+                </div>
+              </Link>
+
+              <Link href="exposicion/auspiciador-d">
+                <div className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]">
+                  <p className="text-[25px] leading-[30px]">{cardTitulo5}</p>
+                </div>
+              </Link>
+
+              <Link href="exposicion/auspiciador-e">
+                <div className="cursor-pointer w-[250px]  md:w-[314px] h-[112px] bg-[#63CC55] flex justify-center items-center rounded-[10px]">
+                  <p className="text-[25px] leading-[30px]">{cardTitulo6}</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -128,7 +127,12 @@ export async function getStaticProps({ locale }) {
 
   return {
     props: {
-      Exposicion: response.default.Exposicion
+      Exposicion: response.default.Exposicion,
+      ModalCalendario: response.default.ModalCalendario,
+      ModalMapa: response.default.ModalMapa,
+      ModalQuestion: response.default.ModalQuestion,
+      Template: response.default.Template,
+      HeaderIdiomas: response.default.HeaderIdiomas
     }
   }
 }

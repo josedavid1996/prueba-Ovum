@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Head } from 'next/head'
-import enUS from '../lang/en-US.json'
-import enPe from '../lang/es-pe.json'
-import enBr from '../lang/pt-br.json'
 import { useRouter } from 'next/router'
 import {
   IconBack,
@@ -20,31 +16,14 @@ import ModalCalender from './ModalCalender'
 import ModalQuestion from './ModalQuestion'
 import Idiomas from './Idiomas'
 
-export const PagineTemplate = ({ children }) => {
+export const PagineTemplate = ({ children, idioma }) => {
   const [question, setQuestion] = useState(false)
   const [maps, setMaps] = useState(false)
   const [calender, setCalender] = useState(false)
   const [isSettings, setIsSettings] = useState(false)
   const router = useRouter()
-  const { locale } = useRouter()
-  let data
-  let idiomas
-  switch (locale) {
-    case 'pt-br':
-      data = enBr.Template
-      idiomas = enBr
-      break
-    case 'es-pe':
-      data = enPe.Template
-      idiomas = enPe
-      break
-    case 'en-US':
-      data = enUS.Template
-      idiomas = enUS
 
-      break
-  }
-  const { textHeader1, textHeader2, ButtonHeader } = data
+  const { textHeader1, textHeader2, ButtonHeader } = idioma.Template
   return (
     <>
       <div className="absolute hidden lg:block  top-0 right-0 z-20">
@@ -87,7 +66,7 @@ export const PagineTemplate = ({ children }) => {
               isSettings ? 'right-4' : 'right-[-100%]'
             } top-12 rounded-[8px] pl-2 transition-right duration-1000 sm:static sm:bg-transparent sm:pl-0`}
           >
-            <Idiomas idiomas={idiomas} />
+            <Idiomas idiomas={idioma} />
           </div>
         </div>
       </header>
@@ -156,13 +135,21 @@ export const PagineTemplate = ({ children }) => {
       </div>
 
       {/* Modal Maps */}
-      <ModalMaps maps={maps} setMaps={setMaps} />
+      <ModalMaps maps={maps} setMaps={setMaps} dataIdioma={idioma.ModalMapa} />
 
       {/* Modal Calender */}
-      <ModalCalender calender={calender} setCalender={setCalender} />
+      <ModalCalender
+        calender={calender}
+        setCalender={setCalender}
+        dataIdioma={idioma.ModalCalendario}
+      />
 
       {/* Modal Question  */}
-      <ModalQuestion question={question} setQuestion={setQuestion} />
+      <ModalQuestion
+        question={question}
+        setQuestion={setQuestion}
+        dataIdioma={idioma.ModalQuestion}
+      />
     </>
   )
 }

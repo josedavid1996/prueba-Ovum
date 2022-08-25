@@ -1,24 +1,7 @@
-import { useRouter } from 'next/router'
 import React from 'react'
 import { IconBack, IconQuestion } from '../icons'
-import enUS from '../lang/en-US.json'
-import enPe from '../lang/es-pe.json'
-import enBr from '../lang/pt-br.json'
 
-const ModalQuestion = ({ question, setQuestion }) => {
-  const { locale } = useRouter()
-  let data
-  switch (locale) {
-    case 'pt-br':
-      data = enBr.ModalQuestion
-      break
-    case 'es-pe':
-      data = enPe.ModalQuestion
-      break
-    case 'en-US':
-      data = enUS.ModalQuestion
-      break
-  }
+const ModalQuestion = ({ question, setQuestion, dataIdioma }) => {
   const {
     titulo,
     volver,
@@ -28,7 +11,7 @@ const ModalQuestion = ({ question, setQuestion }) => {
     parrafo2,
     tituloParrafo3,
     parrafo3
-  } = data
+  } = dataIdioma
   return (
     <div
       id="modal-question"

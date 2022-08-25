@@ -4,10 +4,11 @@ import images from '../../../assets/data.json'
 import { PagineTemplate } from '../../../components/PagineTemplate'
 
 const isServer = () => typeof window === 'undefined'
-const Slug = ({ data }) => {
+const Patrociandor = (props) => {
   // console.log(data)
   const [appRendered, setAppRendered] = useState(false)
   const [sky, setSky] = useState('0 0 0')
+  const data = props.data
 
   useEffect(() => {
     if (!isServer()) {
@@ -36,7 +37,7 @@ const Slug = ({ data }) => {
           </Scene>
         )}
       </div>
-      <PagineTemplate />
+      <PagineTemplate idioma={props} />
     </>
   )
 }
@@ -55,13 +56,19 @@ export async function getStaticPaths() {
     console.log(error)
   }
 }
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
+  const response = await import(`../../../lang/${locale}.json`)
   try {
     const data = params.slug
     // const data = await res.json()
     return {
       props: {
-        data
+        data,
+        ModalCalendario: response.ModalCalendario,
+        ModalMapa: response.ModalMapa,
+        ModalQuestion: response.ModalQuestion,
+        Template: response.default.Template,
+        HeaderIdiomas: response.default.HeaderIdiomas
       }
     }
   } catch (error) {
@@ -69,4 +76,4 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default Slug
+export default Patrociandor

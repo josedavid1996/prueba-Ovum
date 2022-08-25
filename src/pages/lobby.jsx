@@ -251,13 +251,21 @@ const Lobby = (props) => {
       </div>
 
       {/* Modal Maps */}
-      <ModalMaps maps={maps} setMaps={setMaps} />
+      <ModalMaps maps={maps} setMaps={setMaps} dataIdioma={props.ModalMapa} />
 
       {/* Modal Calender */}
-      <ModalCalender calender={calender} setCalender={setCalender} />
+      <ModalCalender
+        calender={calender}
+        setCalender={setCalender}
+        dataIdioma={props.ModalCalendario}
+      />
 
       {/* Modal Question  */}
-      <ModalQuestion question={question} setQuestion={setQuestion} />
+      <ModalQuestion
+        question={question}
+        setQuestion={setQuestion}
+        dataIdioma={props.ModalQuestion}
+      />
     </>
   )
 }
@@ -270,9 +278,9 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       Lobby: response.default.Lobby,
-      // ModalCalendario: response.default.ModalCalendario,
-      // ModalMapa: response.default.ModalMapa,
-      // ModalQuestion: response.default.ModalQuestion,
+      ModalCalendario: response.default.ModalCalendario,
+      ModalMapa: response.default.ModalMapa,
+      ModalQuestion: response.default.ModalQuestion,
       HeaderIdiomas: response.default.HeaderIdiomas
     }
   }

@@ -55,7 +55,7 @@ const Conferencista = (props) => {
           </Scene>
         )}
       </div>
-      <PagineTemplate>
+      <PagineTemplate idioma={props}>
         {/* Modal  */}
         <div
           id="modal"
@@ -217,7 +217,12 @@ export async function getStaticProps({ locale }) {
 
   return {
     props: {
-      Conferencista: response.default.Conferencista
+      Conferencista: response.default.Conferencista,
+      ModalCalendario: response.default.ModalCalendario,
+      ModalMapa: response.default.ModalMapa,
+      ModalQuestion: response.default.ModalQuestion,
+      Template: response.default.Template,
+      HeaderIdiomas: response.default.HeaderIdiomas
     }
   }
 }

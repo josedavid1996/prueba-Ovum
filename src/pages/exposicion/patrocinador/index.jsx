@@ -5,10 +5,11 @@ import Image from 'next/image'
 import { PagineTemplate } from '../../../components/PagineTemplate'
 import { IconClose } from '../../../icons'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const isServer = () => typeof window === 'undefined'
 
-const Patrocinador = () => {
+const Patrocinador = (props) => {
   const [appRendered, setAppRendered] = useState(false)
   const [isModal, setIsModal] = useState(false)
   const router = useRouter()
@@ -32,7 +33,7 @@ const Patrocinador = () => {
         )}
       </div>
       <h1 className="text-white text-3xl">Hola</h1>
-      <PagineTemplate>
+      <PagineTemplate idioma={props}>
         <div
           id="modal-patrocinador"
           className="bg-opacity absolute top-0 right-0 bottom-0 left-0 z-10 flex justify-center items-center"
@@ -47,7 +48,7 @@ const Patrocinador = () => {
             >
               {/* <IconClose className="w-[25px] h-[23px] md:w-[30px] md:h-[28px]" /> */}
             </div>
-            <a>
+            <Link href="patrocinador/cargill">
               <Image
                 id="cargill"
                 priority
@@ -56,11 +57,10 @@ const Patrocinador = () => {
                 alt="cargil"
                 width="173px"
                 height="78px"
-                onClick={(e) => router.push('patrocinador/cargill')}
               />
-            </a>
+            </Link>
 
-            <a>
+            <Link href="patrocinador/salmet">
               <Image
                 id="cmi"
                 className="cursor-pointer"
@@ -68,10 +68,9 @@ const Patrocinador = () => {
                 alt="cmi"
                 width="213px"
                 height="53px"
-                onClick={(e) => router.push('patrocinador/salmet')}
               />
-            </a>
-            <a>
+            </Link>
+            <Link href="patrocinador/hubbard">
               <Image
                 id="trouw"
                 className="cursor-pointer"
@@ -79,9 +78,8 @@ const Patrocinador = () => {
                 alt="trouw"
                 width="229px"
                 height="49px"
-                onClick={(e) => router.push('patrocinador/hubbard')}
               />
-            </a>
+            </Link>
           </div>
         </div>
       </PagineTemplate>
@@ -90,3 +88,16 @@ const Patrocinador = () => {
 }
 
 export default Patrocinador
+export async function getStaticProps({ locale }) {
+  const response = await import(`../../../lang/${locale}.json`)
+
+  return {
+    props: {
+      ModalCalendario: response.ModalCalendario,
+      ModalMapa: response.ModalMapa,
+      ModalQuestion: response.ModalQuestion,
+      Template: response.default.Template,
+      HeaderIdiomas: response.default.HeaderIdiomas
+    }
+  }
+}
